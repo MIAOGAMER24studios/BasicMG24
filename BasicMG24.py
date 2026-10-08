@@ -1,8 +1,7 @@
 #BasicMG24
 print("BasicMG24 by MG24 studios. Version: 1.0. Type '/guide' for help ")
-
 dev = False
-password = 'ilikekids'
+password = '1234'
 
 while True:
     inputhing = input("Insert command here: ")
@@ -15,12 +14,13 @@ while True:
             print("Welcome back, user!")
         else:
             print("Access denied")
+            
 
     elif inputhing == "/info":
         print("Version 1.0. Made by MG24 studios. Discover more on: https://sites.google.com/view/miaogamer24/home-page")
 
     elif inputhing == "/help":
-        print("Here are some commands: /access /info /sum /sub /mol /div /raqua /givelink /guide")
+        print("Here are some commands: /access /info /sum /sub /mol /div /raqua /givelink /guide /feedback /rick /rickshow /passchange /whodev")
 
     elif inputhing == "/sum":
         a = input("Number 1:" )
@@ -69,6 +69,16 @@ while True:
         print("https://www.youtube.com/watch?v=LLFhKaqnWwk An animated version")
         print("https://www.youtube.com/watch?v=hvL1339luv0 Cat version")
 
+    elif inputhing == "/passchange":
+        if dev:
+            password = input("New password:" )
+        else:
+            print("Only administrators can do this")
+
+
+    elif inputhing == "/whodev":
+        print("MG24 studios is a developing studios created by MIAOGAMER24. It's still growing and it's only member it's me.")
+
     elif inputhing == "/guide":
         print("Here is a list of commands and their explanation:")
         print("/access - if u are dev")
@@ -83,6 +93,9 @@ while True:
         print("/feedback - Gives link to a google moduli to report and give me feedback")
         print("/rick - Checks if your link is a rickroll link")
         print("/rickshow - Shows a list of rickroll vids links")
+        print("/passchange - Changes admin password ")
+        print("/whodev - Tells u more info about me ")
+
 
     elif inputhing == "/exit":
         print("Closing BasicMG24...")
@@ -90,3 +103,4 @@ while True:
 
     else:
         print("Unknown command. Type /help or /guide")
+
