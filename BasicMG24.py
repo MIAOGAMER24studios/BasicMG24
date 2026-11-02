@@ -1,106 +1,75 @@
-#BasicMG24
-print("BasicMG24 by MG24 studios. Version: 1.0. Type '/guide' for help ")
-dev = False
-password = '1234'
+#BasicMG24#
+Official documentation
 
-while True:
-    inputhing = input("Insert command here: ")
+Devlog:
 
-    if inputhing == "/access":
-        input_password = input("Enter the password: ")
-        if input_password == password:
-            print("Access granted")
-            dev = True
-            print("Welcome back, user!")
-        else:
-            print("Access denied")
-            
+1.1 (29/10/26): Added new commands. No python needed
+1.0 (7/10/26): Release of BasicMG24
 
-    elif inputhing == "/info":
-        print("Version 1.0. Made by MG24 studios. Discover more on: https://sites.google.com/view/miaogamer24/home-page")
+======================================================================
 
-    elif inputhing == "/help":
-        print("Here are some commands: /access /info /sum /sub /mol /div /raqua /givelink /guide /feedback /rick /rickshow /passchange /whodev")
+Commands:
+       Here is a list of commands and their explanation:
+        /access - if you are dev
+        /info - Version and other
+        /help - List of commands without explanation
+        /sum - Sum some numbers
+        /sub - Subtract some numbers
+        /mol - Moltiplicate some numbers
+        /div - Divide some numbers
+        /raqua - Square root (From: radice quadrata in italian)
+        /esp - Esponentation of two numbers       
+        /givelink - Gives the official link for MG24 studios website
+        /feedback - Gives link to a google moduli to report and give me feedback
+        /rick - Checks if your link is a rickroll link
+        /rickshow - Shows a list of rickroll vids links
+        /passchange - Changes admin password
+        /whodev - Tells u more info about me
+        /diceroll - Random number from 1 to 6
+        /cdiceroll - Custom dice roll
+        /devlogthis - BasicMG24 devlog
+        /devlogall - All devlogs of all MG24 studios things
+        /play1 - play a mini stickrunner
+        /install1 - Install the programs cover image
+        /install2 - Install the play1 textures
+        /r100 - guess with one chance the number (0-100)
+        /rpers - personalized /r100 command
+        /rnum - random number (0-10000000000)
+        /time - tells you what time is it
+        /date - tells you what's the date today
+        / - you sleeping on your keyboard?
+        /wip - Unlocks wip commands
+======================================================================
+Official links:
 
-    elif inputhing == "/sum":
-        a = input("Number 1:" )
-        b = input("Number 2:")
-        print(float(a) + float(b))
+-Website: https://sites.google.com/view/miaogamer24/home-page
+-Feedback: https://forms.gle/15ihMj26TGCug6Sd8
+-Wiki: https://mg24studios.fandom.com/wiki/BasicMG24
+-Discord: https://discord.com/channels/1437514435139993786/1550852509638070293
+======================================================================
 
-    elif inputhing == "/sub":
-        a = input("Number 1:" )
-        b = input("Number 2:" )
-        print(float(a) - float(b))
-
-    elif inputhing == "/mol":
-        a = input("Number 1:" )
-        b = input("Number 2:" )
-        print(float(a) * float(b))
-
-    elif inputhing == "/div":
-        a = input("Number 1:" )
-        b = input("Number 2:" )
-        print(float(a) / float(b))
-
-    elif inputhing == "/raqua":
-        a = input("Number: ")
-        print(float(a) ** 0.5)
-
-    elif inputhing == "/givelink":
-        print("https://sites.google.com/view/miaogamer24/home-page")
-
-    elif inputhing == "/feedback":
-        print("https://forms.gle/15ihMj26TGCug6Sd8")
-
-    elif inputhing == "/rick":
-        Link_input = input("Insert here your link:" )
-        if Link_input in [
-            "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-            "https://www.youtube.com/watch?v=LLFhKaqnWwk",
-            "https://www.youtube.com/watch?v=hvL1339luv0"
-        ]:
-            print("Yes, your link is a rickroll")
-        else:
-            print("Nah, your link isn't a rickroll (theorically)")
-
-    elif inputhing == "/rickshow":
-        print("Here are some rickroll links")
-        print("https://www.youtube.com/watch?v=dQw4w9WgXcQ  This is the original ")
-        print("https://www.youtube.com/watch?v=LLFhKaqnWwk An animated version")
-        print("https://www.youtube.com/watch?v=hvL1339luv0 Cat version")
-
-    elif inputhing == "/passchange":
-        if dev:
-            password = input("New password:" )
-        else:
-            print("Only administrators can do this")
+Bugs:
+Contact miaogamer24@gmail.com to report or on the channel report on discord: https://discord.com/channels/1437514435139993786/1553386132702756955
 
 
-    elif inputhing == "/whodev":
-        print("MG24 studios is a developing studios created by MIAOGAMER24. It's still growing and it's only member it's me.")
-
-    elif inputhing == "/guide":
-        print("Here is a list of commands and their explanation:")
-        print("/access - if u are dev")
-        print("/info - Version and other")
-        print("/help - List of commands without explanation")
-        print("/sum - Sum some numbers")
-        print("/sub - Subtract some numbers")
-        print("/mol - Moltiplicate some numbers")
-        print("/div - Divide some numbers")
-        print("/raqua - Square root (From: radice quadrata in italian)")
-        print("/givelink - Gives the official link for MG24 studios website")
-        print("/feedback - Gives link to a google moduli to report and give me feedback")
-        print("/rick - Checks if your link is a rickroll link")
-        print("/rickshow - Shows a list of rickroll vids links")
-        print("/passchange - Changes admin password ")
-        print("/whodev - Tells u more info about me ")
 
 
-    elif inputhing == "/exit":
-        print("Closing BasicMG24...")
-        break
+Common bugs:
 
-    else:
-        print("Unknown command. Type /help or /guide")
+1. /play1 doesn't load textures
+
+When you try to insert the command /play1 it returns an error. How to fix: Insert in the terminal cd "exactplacewheretheBasicMG24fileis" and try running it now. Easier with /install2 and then insert in the terminal cd "C:\Users\#userwindowsname#\Downloads" OR find where BasicMG24 is and do in a new fresh terminal: cd "exactplacewherearetheBasicMG24filesare"
+
+
+2. /play1 doesn’t load
+
+Still searching how to fix this
+
+
+
+
+
+BasicMG24 made by MG24 studios 2026-2026
+
+MG24 studios 2025-2026 ©
 
